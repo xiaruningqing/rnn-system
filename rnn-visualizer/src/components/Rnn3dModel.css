@@ -1,0 +1,51 @@
+.rnn-3d-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 100%;
+  background: #000000;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.rnn-3d-canvas-wrapper {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.rnn-3d-controls {
+  flex-shrink: 0;
+  padding: 15px 25px;
+  background-color: rgba(22, 27, 34, 0.8);
+  border-top: 1px solid rgba(0, 242, 234, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.explanation-text {
+  margin: 0;
+  font-size: 1rem;
+  color: #c9d1d9;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.control-button {
+  background-color: transparent;
+  border: 1px solid #00a896;
+  color: #00f2ea;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.control-button:hover {
+  background-color: rgba(0, 242, 234, 0.2);
+  box-shadow: 0 0 10px rgba(0, 242, 234, 0.4);
+}

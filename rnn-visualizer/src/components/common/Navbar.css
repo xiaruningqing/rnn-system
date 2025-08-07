@@ -1,0 +1,124 @@
+/* Sidebar general styles */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #202538;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  border-right: 1px solid rgba(0, 242, 234, 0.1);
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Header with Brand and Collapse Button */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 60px; /* Same as App header height */
+  background-color: #161a25;
+}
+
+.sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-brand {
+  opacity: 0;
+  display: none;
+}
+
+.brand-main {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00f2ea;
+}
+
+.brand-sub {
+  font-size: 0.8rem;
+  color: #a0a8c2;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: #a0a8c2;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.collapse-btn:hover {
+  color: #00f2ea;
+}
+
+/* Navigation Links */
+.sidebar-nav {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  color: #a0a8c2;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-nav .nav-link:hover {
+  background-color: #2a2f42;
+  color: #fff;
+}
+
+.sidebar-nav .nav-link.active {
+  background-color: #00f2ea;
+  color: #161a25;
+  font-weight: bold;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  margin-right: 20px;
+  flex-shrink: 0;
+  transition: margin 0.3s ease;
+}
+
+.sidebar.collapsed .nav-icon {
+  margin-right: 0;
+}
+
+.nav-text {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .nav-text {
+  opacity: 0;
+  display: none;
+}
