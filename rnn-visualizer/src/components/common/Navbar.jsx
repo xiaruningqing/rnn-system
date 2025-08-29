@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { 
-    FaBars, FaTimes, FaHome, FaChartBar, FaEye, FaToolbox, FaVideo, FaFlask 
+    FaBars, FaTimes, FaHome, FaChartBar, FaEye, FaToolbox, FaFlask 
 } from 'react-icons/fa';
 
 function Navbar({ isCollapsed, setIsCollapsed }) {
@@ -41,10 +41,6 @@ function Navbar({ isCollapsed, setIsCollapsed }) {
           <li><NavLink to="/text-classification" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
             <FaFlask className="nav-icon" />
             {!isCollapsed && <span className="nav-text">文本分类</span>}
-          </NavLink></li>
-          <li><NavLink to="/video-tutorial" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-            <FaVideo className="nav-icon" />
-            {!isCollapsed && <span className="nav-text">视频教学</span>}
           </NavLink></li>
         </ul>
       </nav>

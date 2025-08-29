@@ -6,7 +6,6 @@ import ComparativeAnalysis from './pages/ComparativeAnalysis';
 import VisualizationPage from './pages/VisualizationPage';
 import Toolbox from './pages/Toolbox';
 import TextClassification from './pages/TextClassification';
-import VideoTutorial from './pages/VideoTutorial';
 import './App.css';
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
             <Route path="/visualization" element={<VisualizationPage />} />
             <Route path="/toolbox" element={<Toolbox />} />
             <Route path="/text-classification" element={<TextClassification />} />
-            <Route path="/video-tutorial" element={<VideoTutorial />} />
           </Routes>
         </main>
       </div>
